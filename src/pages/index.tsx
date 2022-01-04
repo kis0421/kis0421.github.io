@@ -5,6 +5,24 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+/*
+TODO: 메인페이지 글 리스트 불러오기
+ allFile(filter: {extension: {eq: "md"}}) {
+    edges {
+      node {
+        name
+        extension
+        birthTime
+        dir
+        childrenMarkdownRemark {
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+*/
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
