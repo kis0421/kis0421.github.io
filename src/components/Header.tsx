@@ -6,7 +6,8 @@ const Header = (props: { siteTitle }) => {
   const { siteTitle } = props;
   return <header
     style={{
-      background: `rebeccapurple`,
+      background: `white`,
+      borderBottom:"1px solid #dadada",
       marginBottom: `1.45rem`,
     }}>
     <div
@@ -15,11 +16,11 @@ const Header = (props: { siteTitle }) => {
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}>
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0 ,fontSize:"1.5em"}}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `#333`,
             textDecoration: `none`,
           }}>
           {siteTitle}
