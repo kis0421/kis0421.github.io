@@ -1,9 +1,4 @@
-exports.createPages = async ({ actions }) => {
-  const { createPage } = actions
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
-}
+require('ts-node').register();
+const { createPages } = require('./src/lib/createPages');
+
+exports.createPages = createPages;
