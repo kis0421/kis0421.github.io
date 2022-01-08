@@ -29,9 +29,11 @@ const IndexPage = () => {
 
       return <div key={node.id}>
         <h3>
-          <Link className="link" to={node.frontmatter.title}>{node.frontmatter.title}</Link>
+          <Link className="linkDefault" to={node.frontmatter.title}>{node.frontmatter.title}</Link>
         </h3>
-        <p style={{ marginBottom: "8px" }}>{node.excerpt}</p>
+        <p className="excerptLink" style={{ marginBottom: "8px" }}>
+          <Link className="linkDefault" to={node.frontmatter.title}>{node.excerpt}</Link>
+        </p>
         <div style={{ color: "#ababab" }}>{node.frontmatter.date}</div>
         <hr />
       </div>
