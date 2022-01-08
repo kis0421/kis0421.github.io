@@ -3,7 +3,7 @@ import path from "path";
 
 
 export async function createPages({ actions, graphql }: CreatePagesArgs) {
-  
+
   const { data, errors }: { data?: any, errors?: any } = await graphql(`
     {
         allMarkdownRemark {
@@ -25,7 +25,7 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
 
   const { createPage } = actions;
   data?.allMarkdownRemark.edges.forEach(({ node }: any) => {
-    console.log(node.frontmatter)
+
     createPage({
       path: node.frontmatter.title,
       context: {
