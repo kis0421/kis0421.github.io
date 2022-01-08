@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkis0421_github_io=self.webpackChunkkis0421_github_io||[]).push([[473],{1922:function(e,t,n){n.r(t);var l=n(7294),a=n(5444),c=n(63),o=n(9470);t.default=function(){return l.createElement(c.Z,null,l.createElement(o.Z,{title:"Page two"}),l.createElement("h1",null,"Hi from the second page"),l.createElement("p",null,"Welcome to page 2"),l.createElement(a.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-page-2-tsx-d7a0633c60ac470f1769.js.map
