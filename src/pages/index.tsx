@@ -33,7 +33,9 @@ const IndexPage = () => {
     {data.allMarkdownRemark.edges.map(({ node }) => {
 
       return <div key={node.id}>
-        <h2>{node.frontmatter.title}</h2>
+        <h3>
+          <Link className="link" to={node.frontmatter.title}>{node.frontmatter.title}</Link>
+        </h3>
         <p>{node.excerpt}</p>
         <div style={{ color: "#ababab" }}>{node.frontmatter.date}</div>
         <hr />

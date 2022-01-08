@@ -57,8 +57,18 @@ template {
     display: none;
 }
 
+.link {
+    text-decoration: none;
+    color: #666;
+    transition: color .5s;
+}
+.link:hover{
+    color:#333
+}
+
 a {
     background-color: transparent;
+
     -webkit-text-decoration-skip: objects;
 }
 
