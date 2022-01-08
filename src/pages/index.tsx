@@ -25,18 +25,13 @@ const IndexPage = () => {
  `);
   return <Layout>
     <Seo title="Home" />
-    <h1>Hi people~</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-
-
     {data.allMarkdownRemark.edges.map(({ node }) => {
 
       return <div key={node.id}>
         <h3>
           <Link className="link" to={node.frontmatter.title}>{node.frontmatter.title}</Link>
         </h3>
-        <p>{node.excerpt}</p>
+        <p style={{ marginBottom: "8px" }}>{node.excerpt}</p>
         <div style={{ color: "#ababab" }}>{node.frontmatter.date}</div>
         <hr />
       </div>
