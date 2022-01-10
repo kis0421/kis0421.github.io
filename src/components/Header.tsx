@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import {
   FaMoon as MoonIcon,
-  FaTags as FaTagsIcon
+  FaTags as FaTagsIcon,
+  FaGithub as FaGithubIcon,
 } from "react-icons/fa";
 
 const Header = (props: { siteTitle }) => {
@@ -33,6 +34,9 @@ const Header = (props: { siteTitle }) => {
       <span style={{ float: "right" }}>
         <MoonIcon className="headerIcon" size="24" />
         <FaTagsIcon className="headerIcon" size="24" />
+        <Link to="https://github.com/kis0421" target="_blank">
+          <FaGithubIcon className="headerIcon" size="24" />
+        </Link>
       </span>
     </div>
   </header>
