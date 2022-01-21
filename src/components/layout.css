@@ -714,7 +714,7 @@ body {
 body.dark {
     -webkit-font-smoothing: antialiased;
 
-    --bg: #333;
+    --bg: #222;
     --textNormal: rgba(255, 255, 255, 0.88);
     --textTitle: white;
     --textLink: yellow;
@@ -730,15 +730,27 @@ body.dark {
 body.dark .linkDefault {
     color: white;
 }
-body .siteTitle{
+
+body .siteTitle {
     color: #333
 }
+
 body.dark .siteTitle {
     color: white
 }
-body.dark hr{
+
+body.dark hr {
     background-color: white
 }
+
 .linkDefault:hover {
     color: #222
+}
+
+.moonIcon:hover {
+    color: yellow
+}
+
+body.dark .moonIcon {
+    color: yellow
 }

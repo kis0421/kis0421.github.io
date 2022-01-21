@@ -37,7 +37,7 @@ const Header = (props: { siteTitle: string }) => {
           {({ theme, toggleTheme }: { theme: "light" | "dark", toggleTheme: any }) => {
             console.log(theme)
             return <MoonIcon
-              className="headerIcon"
+              className="headerIcon moonIcon"
               size="24"
               onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} />
           }}
