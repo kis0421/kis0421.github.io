@@ -6,12 +6,13 @@ import {
   FaTags as FaTagsIcon,
   FaGithub as FaGithubIcon,
 } from "react-icons/fa";
+import { ThemeToggler } from "gatsby-plugin-dark-mode";
 
-const Header = (props: { siteTitle }) => {
+
+const Header = (props: { siteTitle: string }) => {
   const { siteTitle } = props;
   return <header
     style={{
-      background: `white`,
       borderBottom: "1px solid #dadada",
       marginBottom: `1.45rem`,
     }}>
@@ -23,16 +24,24 @@ const Header = (props: { siteTitle }) => {
       }}>
       <h1 style={{ margin: 0, fontSize: "1.5em", display: "inline-block" }}>
         <Link
+          className="siteTitle"
           to="/"
           style={{
-            color: `#333`,
             textDecoration: `none`,
           }}>
           {siteTitle}
         </Link>
       </h1>
       <span style={{ float: "right" }}>
-        <MoonIcon className="headerIcon" size="24" />
+        <ThemeToggler>
+          {({ theme, toggleTheme }: { theme: "light" | "dark", toggleTheme: any }) => {
+            console.log(theme)
+            return <MoonIcon
+              className="headerIcon"
+              size="24"
+              onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} />
+          }}
+        </ThemeToggler>
         <FaTagsIcon className="headerIcon" size="24" />
         <Link to="https://github.com/kis0421" target="_blank">
           <FaGithubIcon className="headerIcon" size="24" />

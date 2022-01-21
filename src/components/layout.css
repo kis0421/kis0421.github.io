@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Rubik&display=swap');
-*{
+
+* {
     font-family: 'Nanum Gothic Coding', monospace;
     font-family: 'Rubik', sans-serif;
 }
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -62,14 +64,7 @@ template {
     display: none;
 }
 
-.linkDefault {
-    text-decoration: none;
-    color: #555;
-    transition: color .5s;
-}
-.linkDefault:hover{
-    color:#222
-}
+
 
 a {
     background-color: transparent;
@@ -702,4 +697,48 @@ pre tt:after {
 
 .headerIcon:hover {
     color: #555
+}
+
+/* darkmode */
+
+body {
+    --bg: white;
+    --textNormal: #222;
+    --textTitle: #222;
+    --textLink: blue;
+    --hr: hsla(0, 0%, 0%, 0.2);
+
+    background-color: var(--bg);
+}
+
+body.dark {
+    -webkit-font-smoothing: antialiased;
+
+    --bg: #333;
+    --textNormal: rgba(255, 255, 255, 0.88);
+    --textTitle: white;
+    --textLink: yellow;
+    --hr: hsla(0, 0%, 100%, 0.2);
+}
+
+.linkDefault {
+    text-decoration: none;
+    color: #555;
+    transition: color .5s;
+}
+
+body.dark .linkDefault {
+    color: white;
+}
+body .siteTitle{
+    color: #333
+}
+body.dark .siteTitle {
+    color: white
+}
+body.dark hr{
+    background-color: white
+}
+.linkDefault:hover {
+    color: #222
 }
