@@ -42,9 +42,9 @@ const Header = (props: { siteTitle: string }) => {
               onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} />
           }}
         </ThemeToggler>
-        <FaTagsIcon className="headerIcon" size="24" />
+        <FaTagsIcon className="headerIcon tagIcon" size="24" />
         <Link to="https://github.com/kis0421" target="_blank">
-          <FaGithubIcon className="headerIcon" size="24" />
+          <FaGithubIcon className="headerIcon gitHubIcon" size="24" />
         </Link>
       </span>
     </div>
