@@ -754,3 +754,11 @@ body.dark hr {
 body.dark .moonIcon {
     color: yellow
 }
+
+body.dark .gitHubIcon:hover{
+    color:white
+}
+
+body.dark .tagIcon:hover{
+    color:white
+}
