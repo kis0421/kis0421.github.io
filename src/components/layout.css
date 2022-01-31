@@ -739,6 +739,18 @@ body.dark .siteTitle {
     color: white
 }
 
+.templateWrap > * {
+    transition: color .5s;
+}
+body.dark .templateWrap > * {
+    color:white
+}
+.templateWrap a{
+    transition: color .5s;
+}
+body.dark .templateWrap a {
+    color: white
+}
 body.dark hr {
     background-color: white
 }
