@@ -35,7 +35,6 @@ const Header = (props: { siteTitle: string }) => {
       <span style={{ float: "right" }}>
         <ThemeToggler>
           {({ theme, toggleTheme }: { theme: "light" | "dark", toggleTheme: any }) => {
-            console.log(theme)
             return <MoonIcon
               className="headerIcon moonIcon"
               size="24"
