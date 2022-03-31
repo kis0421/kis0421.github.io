@@ -1,9 +1,9 @@
 {
   "name": "kis0421.github.io",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "tech blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Minkyu KIM <kig0421@gmail.com>",
   "dependencies": {
     "gatsby": "^4.4.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
@@ -35,7 +35,6 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
