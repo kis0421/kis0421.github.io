@@ -50,11 +50,12 @@ date: 2022.01.15
 - ipv4의 한정적인 수로 인해 등장한 새로운 체계다.
 - 16bit 씩 8자리며 각 자리는 콜론(:)으로 구분한다
 
-> 참조
-> 
+### Reference
 
-[[네트워크] IP주소란? IPv4와 IPv6. IP주소는 왜 필요한가? 내 컴퓨터 IP 확인하는 법](https://jhnyang.tistory.com/245)
+___
 
-[[ 네트워크 이해하기 Step4] TCP란?](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=yeopil-yoon&logNo=221297403864)
+- [[네트워크] IP주소란? IPv4와 IPv6. IP주소는 왜 필요한가? 내 컴퓨터 IP 확인하는 법](https://jhnyang.tistory.com/245)
 
-[](https://namu.wiki/w/TCP)
+- [[ 네트워크 이해하기 Step4] TCP란?](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=yeopil-yoon&logNo=221297403864)
+
+- [[TCP] 위키](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
