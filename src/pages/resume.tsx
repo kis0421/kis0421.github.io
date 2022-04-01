@@ -1,26 +1,14 @@
 import * as React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import {
   FaGithub as FaGithubIcon,
   FaEnvelope as FaEnvelopeIcon,
 } from "react-icons/fa";
 
 import Layout from "../components/layout"
-import {
-  ReactIcon,
-  JavaScriptIcon,
-  NodeJSIcon,
-  ExpressIcon,
-  GraphQLIcon,
-  MySQLIcon,
-  PHPIcon,
-  ElectronIcon,
-  SQLiteIcon,
-  TypeScriptIcon
-} from "../components/resume/SvgIcons"
-
-
+import SkillStacks from "../components/resume/SkillStackStatic";
+import ProjectsStatic from "../components/resume/ProjectsStatic";
+import CareerStatic from "../components/resume/CareerStatic";
 
 const ResumeWrap = styled.main`
  * {
@@ -72,8 +60,34 @@ const ProjectsWrap = styled.article`
   }
   div:nth-of-type(1), div:nth-of-type(2){
     color: #ababab;
+    margin:4px 0;
   }
-`
+  div:nth-of-type(2){
+    margin-bottom: 1rem;
+    > span:nth-of-type(2){
+      font-size:0.8rem;
+      margin-left: 8px;
+    }
+  }`;
+const CareerWrap = styled.article`
+  min-height:150px;
+  padding: 1rem 0;
+  h3 {
+    font-size:1.5rem;
+    > span:nth-of-type(2){
+      font-size:1rem;
+      color:#bababa;
+      margin: 0 12px;
+    };
+    > span:nth-of-type(3){
+      font-weight:normal;
+    }
+    
+  }
+  div:nth-of-type(1){
+    color: #ababab;
+    margin:4px 0;
+  }`;
 
 const FaintLine = styled.hr`background-color:#eaeaea`;
 export default () => {
@@ -82,58 +96,7 @@ export default () => {
     { icon: <FaEnvelopeIcon className="headerIcon gitHubIcon" size="24" />, link: "mailto:kig0421@gmail.com" }
   ];
 
-  const SkillStacks: Array<{ icon: JSX.Element, title: string, content: Element | string }> = [
-    {
-      icon: <ReactIcon />,
-      title: "React",
-      content: "dd",
-    },
-    {
-      icon: <JavaScriptIcon />,
-      title: "JavaScript",
-      content: "dd",
-    },
-    {
-      icon: <TypeScriptIcon />,
-      title: "TypeScript",
-      content: "dd",
-    },
-    {
-      icon: <ElectronIcon />,
-      title: "Electron.js",
-      content: "dd",
-    },
-    {
-      icon: <NodeJSIcon />,
-      title: "Node.js",
-      content: "dd",
-    },
-    {
-      icon: <ExpressIcon />,
-      title: "Express.js",
-      content: "dd",
-    },
-    {
-      icon: <PHPIcon />,
-      title: "PHP",
-      content: "dd",
-    },
-    {
-      icon: <GraphQLIcon />,
-      title: "GraphQL",
-      content: "dd",
-    },
-    {
-      icon: <MySQLIcon />,
-      title: "MySQL",
-      content: "dd",
-    },
-    {
-      icon: <SQLiteIcon />,
-      title: "SQLite",
-      content: "dd",
-    },
-  ]
+
   return (
     <Layout>
       <ResumeWrap>
@@ -161,23 +124,44 @@ export default () => {
             <SkillStacksWrap>
               <div>{info.icon}</div>
               <div>{info.title}</div>
-              <div>
-                사용해봤습니다.
-              </div>
+              <div>{info.content}</div>
             </SkillStacksWrap>
             {index + 1 < SkillStacks.length && <FaintLine />}
           </>)}
-          <hr />
         </SectionWithMargin>
 
         <SectionWithMargin>
           <h2>프로젝트</h2>
           <hr />
-          <ProjectsWrap>
-            <div>주식회사 오너클랜</div>
-            <h3>온라인 유통 판매 B2B 웹 사이트 </h3>
-            <div>2020년 10월 - 2021년 3월</div>
-          </ProjectsWrap>
+          {ProjectsStatic.map((info, index) => <>
+            <ProjectsWrap>
+              <div>{info.company}</div>
+              <h3>{info.title} </h3>
+              <div>
+                <span>{info.date}</span>
+                <span>{info.projectMember}</span>
+              </div>
+              <article>{info.content}</article>
+            </ProjectsWrap>
+            {index + 1 < ProjectsStatic.length && <FaintLine />}
+          </>)}
+        </SectionWithMargin>
+
+        <SectionWithMargin>
+          <h2>경력</h2>
+          <hr />
+          {CareerStatic.map((info, index) => <>
+            <CareerWrap>
+              <h3>
+                <span>{info.company}</span>
+                <span>|</span>
+                <span>{info.position}</span>
+              </h3>
+              <div>{info.date}</div>
+              <article>{info.content}</article>
+            </CareerWrap>
+            {index + 1 < CareerStatic.length && <FaintLine />}
+          </>)}
         </SectionWithMargin>
 
       </ResumeWrap>
