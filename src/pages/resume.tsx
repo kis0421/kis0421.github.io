@@ -24,6 +24,7 @@ import {
 
 const ResumeWrap = styled.main`
  * {
+   font-family: 'Rubik', 'Nanum Gothic Coding';   
    --text-link: #222;
  };
  h3 {
@@ -36,28 +37,44 @@ const SectionWithMargin = styled.section`
   margin-bottom:0;
   padding-bottom:3rem;`;
 
-const SkillStackWrap = styled.article`
+const SkillStacksWrap = styled.article`
   min-height:120px;
   display:flex;
   align-items:center;
   padding: 1rem 0;
-
-  div:nth-child(1), div:nth-child(2) {
+  div:nth-of-type(1){
+    width:75px;
+  }
+  div:nth-of-type(2){
+    min-width:100px;
+  }
+  div:nth-of-type(1), div:nth-of-type(2) {
     display: inline-block;
     margin-right: 1.3rem;
   }
-  div:nth-child(3){
+  div:nth-of-type(3){
     display:inline-block;
   };
 
   @media (max-width: 768px){
     display:block;
-    div:nth-child(3){
+    div:nth-of-type(3){
       width:100%;
       margin-top:0.5rem;
     }
   }
 `;
+const ProjectsWrap = styled.article`
+  min-height:250px;
+  padding: 1rem 0;
+  h3 {
+    font-size:1.5rem;
+  }
+  div:nth-of-type(1), div:nth-of-type(2){
+    color: #ababab;
+  }
+`
+
 const FaintLine = styled.hr`background-color:#eaeaea`;
 export default () => {
   const linkGroups = [
@@ -85,7 +102,7 @@ export default () => {
       icon: <ElectronIcon />,
       title: "Electron.js",
       content: "dd",
-    },    
+    },
     {
       icon: <NodeJSIcon />,
       title: "Node.js",
@@ -100,7 +117,7 @@ export default () => {
       icon: <PHPIcon />,
       title: "PHP",
       content: "dd",
-    },    
+    },
     {
       icon: <GraphQLIcon />,
       title: "GraphQL",
@@ -141,13 +158,13 @@ export default () => {
           <h2>기술 스택</h2>
           <hr />
           {SkillStacks.map((info, index) => <>
-            <SkillStackWrap>
+            <SkillStacksWrap>
               <div>{info.icon}</div>
               <div>{info.title}</div>
               <div>
                 사용해봤습니다.
               </div>
-            </SkillStackWrap>
+            </SkillStacksWrap>
             {index + 1 < SkillStacks.length && <FaintLine />}
           </>)}
           <hr />
@@ -156,6 +173,11 @@ export default () => {
         <SectionWithMargin>
           <h2>프로젝트</h2>
           <hr />
+          <ProjectsWrap>
+            <div>주식회사 오너클랜</div>
+            <h3>온라인 유통 판매 B2B 웹 사이트 </h3>
+            <div>2020년 10월 - 2021년 3월</div>
+          </ProjectsWrap>
         </SectionWithMargin>
 
       </ResumeWrap>
