@@ -30,23 +30,23 @@ const SkillStacksWrap = styled.article`
   display:flex;
   align-items:center;
   padding: 1rem 0;
-  div:nth-of-type(1){
+  article:nth-child(1){
     width:75px;
   }
-  div:nth-of-type(2){
+  article:nth-child(2){
     min-width:100px;
   }
-  div:nth-of-type(1), div:nth-of-type(2) {
+  article:nth-child(1), article:nth-child(2) {
     display: inline-block;
     margin-right: 1.3rem;
   }
-  div:nth-of-type(3){
+  article:nth-child(3){
     display:inline-block;
   };
 
   @media (max-width: 768px){
     display:block;
-    div:nth-of-type(3){
+    article:nth-child(3){
       width:100%;
       margin-top:0.5rem;
     }
@@ -58,13 +58,13 @@ const ProjectsWrap = styled.article`
   h3 {
     font-size:1.5rem;
   }
-  div:nth-of-type(1), div:nth-of-type(2){
+  div:nth-child(1), div:nth-child(2){
     color: #ababab;
     margin:4px 0;
   }
-  div:nth-of-type(2){
+  div:nth-child(2){
     margin-bottom: 1rem;
-    > span:nth-of-type(2){
+    > span:nth-child(2){
       font-size:0.8rem;
       margin-left: 8px;
     }
@@ -74,17 +74,17 @@ const CareerWrap = styled.article`
   padding: 1rem 0;
   h3 {
     font-size:1.5rem;
-    > span:nth-of-type(2){
+    > span:nth-child(2){
       font-size:1rem;
       color:#bababa;
       margin: 0 12px;
     };
-    > span:nth-of-type(3){
+    > span:nth-child(3){
       font-weight:normal;
     }
     
   }
-  div:nth-of-type(1){
+  div:nth-child(1){
     color: #ababab;
     margin:4px 0;
   }`;
@@ -112,7 +112,8 @@ export default () => {
             </LinkGroups>
           </h1>
           <h3>
-            <div>how와 why를 좋아하며</div>
+            <div>how와 why를 좋아하고</div>
+            <div>결과보다는 과정의 이해를 중요시 하며,</div>
             <div>고민과 생각으로 성장하는 개발자 김민규입니다.</div>
           </h3>
         </SectionWithMargin>
@@ -122,9 +123,9 @@ export default () => {
           <hr />
           {SkillStacks.map((info, index) => <>
             <SkillStacksWrap>
-              <div>{info.icon}</div>
-              <div>{info.title}</div>
-              <div>{info.content}</div>
+              <article>{info.icon}</article>
+              <article>{info.title}</article>
+              <article>{info.content}</article>
             </SkillStacksWrap>
             {index + 1 < SkillStacks.length && <FaintLine />}
           </>)}
