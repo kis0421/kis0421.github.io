@@ -100,7 +100,7 @@ const SkillStacks: Array<{ icon: JSX.Element, title: string, content: JSX.Elemen
     title: "SQLite",
     content: <>
       <div>electronjs를 통해 개발한 데스크탑 애플리케이션에서 사용하는 DB로 사용한 적이 있습니다. 클라이언트에 저장되는 데이터베이스 파일의 특성을 이해하고 장단점을 이해하고있습니다.</div>
-      <div>패칭이 자주 일어나는 프로젝트 특성을 고려하여, 트랜잭션처리에 대한 경험이 있습니다.</div>
+      <div>패칭(fetching) 자주 일어나는 프로젝트 특성을 고려하여, 조금 더 주의 깊게 트랜잭션처리에 대한 경험이 있습니다.</div>
     </>,
   },
 ];
