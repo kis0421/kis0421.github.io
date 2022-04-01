@@ -20,7 +20,13 @@ const ResumeWrap = styled.main`
 };`;
 const LinkGroups = styled.article`
   display: inline;
-  margin-left: 1.1rem;`;
+  margin-left: 1.1rem;
+  @media (max-width: 768px){
+      display:block;
+      margin-left: 0.2rem;
+  }
+  `;
+
 const SectionWithMargin = styled.section`
   margin-bottom:0;
   padding-bottom:3rem;`;
