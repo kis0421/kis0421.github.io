@@ -15,6 +15,7 @@ import {
   GraphQLIcon,
   MySQLIcon,
   PHPIcon,
+  ElectronIcon,
   SQLiteIcon,
   TypeScriptIcon
 } from "../components/resume/SvgIcons"
@@ -75,12 +76,16 @@ export default () => {
       title: "JavaScript",
       content: "dd",
     },
-
     {
       icon: <TypeScriptIcon />,
       title: "TypeScript",
       content: "dd",
     },
+    {
+      icon: <ElectronIcon />,
+      title: "Electron.js",
+      content: "dd",
+    },    
     {
       icon: <NodeJSIcon />,
       title: "Node.js",
@@ -91,6 +96,11 @@ export default () => {
       title: "Express.js",
       content: "dd",
     },
+    {
+      icon: <PHPIcon />,
+      title: "PHP",
+      content: "dd",
+    },    
     {
       icon: <GraphQLIcon />,
       title: "GraphQL",
@@ -133,9 +143,7 @@ export default () => {
           {SkillStacks.map((info, index) => <>
             <SkillStackWrap>
               <div>{info.icon}</div>
-              <div>
-                <span>{info.title}</span>
-              </div>
+              <div>{info.title}</div>
               <div>
                 사용해봤습니다.
               </div>
