@@ -118,7 +118,7 @@ export default () => {
           </h1>
           <h3>
             <div>how와 why를 좋아하고</div>
-            <div>결과보다는 과정의 이해를 중요시 하며,</div>
+            <div>결과보다는 과정과 이해를 중요시 하며,</div>
             <div>고민과 생각으로 성장하는 개발자 김민규입니다.</div>
           </h3>
         </SectionWithMargin>
