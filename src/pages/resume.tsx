@@ -32,12 +32,12 @@ const ResumeWrap = styled.main`
 const LinkGroups = styled.article`
   display: inline;
   margin-left: 1.1rem;`;
-const Intro = styled.section`
+const SectionWithMargin = styled.section`
   margin-bottom:0;
   padding-bottom:3rem;`;
 
 const SkillStackWrap = styled.article`
-  min-height:150px;
+  min-height:120px;
   display:flex;
   align-items:center;
   padding: 1rem 0;
@@ -58,7 +58,7 @@ const SkillStackWrap = styled.article`
     }
   }
 `;
-
+const FaintLine = styled.hr`background-color:#eaeaea`;
 export default () => {
   const linkGroups = [
     { icon: <FaGithubIcon className="headerIcon gitHubIcon" size="24" />, link: "https://github.com/kis0421" },
@@ -84,12 +84,12 @@ export default () => {
     },
     {
       icon: <NodeJSIcon />,
-      title: "NodeJS",
+      title: "Node.js",
       content: "dd",
     },
     {
       icon: <ExpressIcon />,
-      title: "Express",
+      title: "Express.js",
       content: "dd",
     },
     {
@@ -101,17 +101,17 @@ export default () => {
       icon: <MySQLIcon />,
       title: "MySQL",
       content: "dd",
-    },    
+    },
     {
       icon: <SQLiteIcon />,
       title: "SQLite",
       content: "dd",
-    },        
+    },
   ]
   return (
     <Layout>
       <ResumeWrap>
-        <Intro>
+        <SectionWithMargin>
           <h1>
             <span>김민규 Minkyu Kim</span>
             <LinkGroups>
@@ -126,23 +126,31 @@ export default () => {
             <div>how와 why를 좋아하며</div>
             <div>고민과 생각으로 성장하는 개발자 김민규입니다.</div>
           </h3>
-        </Intro>
+        </SectionWithMargin>
 
-        <section>
+        <SectionWithMargin>
           <h2>기술 스택</h2>
           <hr />
-
-          {SkillStacks.map((info) => <SkillStackWrap>
-            <div>{info.icon}</div>
-            <div>
-              <span>{info.title}</span>
-            </div>
-            <div>
-              사용해봤습니다.
-            </div>
-          </SkillStackWrap>)}
+          {SkillStacks.map((info, index) => <>
+            <SkillStackWrap>
+              <div>{info.icon}</div>
+              <div>
+                <span>{info.title}</span>
+              </div>
+              <div>
+                사용해봤습니다.
+              </div>
+            </SkillStackWrap>
+            {index + 1 < SkillStacks.length && <FaintLine />}
+          </>)}
           <hr />
-        </section>
+        </SectionWithMargin>
+
+        <SectionWithMargin>
+          <h2>프로젝트</h2>
+          <hr />
+        </SectionWithMargin>
+
       </ResumeWrap>
     </Layout>
   )
