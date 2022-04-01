@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `김민규 제2의 머릿속`,
+    title: `제2의 머릿속`,
     description: `tech blog`,
     author: `@gatsbyjs`,
   },
