@@ -23,7 +23,6 @@ import {
 
 const ResumeWrap = styled.main`
  * {
-   font-family: 'Rubik', 'Nanum Gothic Coding';
    --text-link: #222;
  };
  h3 {

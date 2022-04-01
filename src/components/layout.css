@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Rubik&display=swap');
 
 * {
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', 'Nanum Gothic Coding';
 }
 
 html {
