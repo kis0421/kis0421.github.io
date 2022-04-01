@@ -58,11 +58,11 @@ const ProjectsWrap = styled.article`
   h3 {
     font-size:1.5rem;
   }
-  div:nth-child(1), div:nth-child(2){
+  div:nth-child(1), div:nth-child(3){
     color: #ababab;
     margin:4px 0;
   }
-  div:nth-child(2){
+  div:nth-child(3){
     margin-bottom: 1rem;
     > span:nth-child(2){
       font-size:0.8rem;
@@ -85,8 +85,7 @@ const CareerWrap = styled.article`
     
   }
   div:nth-child(1){
-    color: #ababab;
-    margin:4px 0;
+    margin-top:4px;
   }`;
 
 const FaintLine = styled.hr`background-color:#eaeaea`;
