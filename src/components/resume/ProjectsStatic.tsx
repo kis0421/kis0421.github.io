@@ -10,7 +10,7 @@ const ProjectsStatic: Array<{
 }> = [
     {
       company: "(주)오너클랜",
-      title: "온라인 유통 판매 B2B 웹 사이트",
+      title: <a href="https://ownerclan.com/" target="_blank">온라인 유통 판매 B2B 웹 사이트</a>,
       date: "2015.09 - 2017.06",
       projectMember: "본인 외 2인",
       content: <>
@@ -26,7 +26,7 @@ const ProjectsStatic: Array<{
     },
     {
       company: "(주)오너클랜",
-      title: "오픈마켓 상품 관리 데스크탑 애플리케이션",
+      title: <a href="https://ownerclan.com/V2/info_page/dafalza2.php" target="_blank">오픈마켓 상품 관리 데스크탑 애플리케이션</a>,
       date: "2018.9 ~ 2021.04",
       projectMember: "본인 외 1인",
       content: <>
@@ -44,7 +44,7 @@ const ProjectsStatic: Array<{
     },
     {
       company: "(주)차이몰",
-      title: "B2B 서비스 웹 개발",
+      title: <a href="http://allthemall.co.kr/#/shop" target="_blank">B2B 서비스 웹 개발</a>,
       date: "2021.05 ~ 2022.01",
       projectMember: "본인 외 1인",
       content: <>
@@ -54,9 +54,9 @@ const ProjectsStatic: Array<{
         <div>필요에 따라 Puppeteer를 사용한 웹오토메이션으로 통계 데이터를 크롤링하여 수집해 저장했고, 어드민 페이지에 Chart.js를 이용한 시각화된 데이터를 제공 했습니다.</div>
         <div>처음부터 직접 설계와 개발을 모두 진행했고, 같이 프로젝트 담당을 한 동료와도 코드리뷰와 스터지를 주도하여 진행함으로써 협업을 통해 성장하고 원활한 커뮤니케이션을 다시 한 번 배우는 기회였습니다. </div>
         <br />
-        <div>사용 기술: React TypeScript Puppeteer Express.js  등</div>        
+        <div>사용 기술: React TypeScript Puppeteer Express.js  등</div>
       </>,
-      keyword: ["React", "TypeScript", "Puppeteer","Express.js"]
+      keyword: ["React", "TypeScript", "Puppeteer", "Express.js"]
     },
   ];
 export default ProjectsStatic;

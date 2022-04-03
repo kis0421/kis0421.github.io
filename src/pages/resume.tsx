@@ -63,6 +63,10 @@ const ProjectsWrap = styled.article`
   padding: 1rem 0;
   h3 {
     font-size:1.5rem;
+    > a {
+      color:#222;
+      text-decoration: none;
+    }
   }
   > div:nth-child(1){
     color: #ababab;
