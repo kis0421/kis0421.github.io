@@ -19,7 +19,6 @@ const SkillStacks: Array<{ icon: JSX.Element, title: string, content: JSX.Elemen
     title: "React",
     content: <>
       <div>SPA에 대한 이해를 바탕으로 화면을 구성하는데 필요한 UI를 알맞게 구현 할 수 있고, Component를 분리를 하여 재사용이 용이한 구조로 생성을 하고 관리를 할 수 있습니다.</div>
-      <div>CSS-in-CSS를 주로 사용하지만, Styled-Component와 같은 라이브러리를 통해 CSS-in-JS 방식의 Component 스타일링을 구현 할 수 있습니다.</div>
       <div>Class Component 보다는 Functional Component를 좋아하며, Context와 Mobx를 통한 상태관리 경험이 있습니다.</div>
       <div>효율적인 자료 구조로 state를 관리하며, Chart.js 라이브러리를 사용한 데이터 시각화를 구현해봤습니다.</div>
     </>,
