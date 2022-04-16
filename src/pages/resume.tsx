@@ -9,6 +9,7 @@ import Layout from "../components/layout"
 import SkillStacks from "../components/resume/SkillStackStatic";
 import ProjectsStatic from "../components/resume/ProjectsStatic";
 import CareerStatic from "../components/resume/CareerStatic";
+import Seo from "../components/seo"
 
 const ResumeWrap = styled.main`
  * {
@@ -110,6 +111,7 @@ export default () => {
 
   return (
     <Layout>
+      <Seo title="김민규 Minkyu Kim" description="저에 대한 간략한 소개입니다." />
       <ResumeWrap>
         <SectionWithMargin>
           <h1>
