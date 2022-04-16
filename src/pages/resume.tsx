@@ -11,6 +11,7 @@ import ProjectsStatic from "../components/resume/ProjectsStatic";
 import CareerStatic from "../components/resume/CareerStatic";
 import Seo from "../components/seo"
 
+// TODO: style 파일 분리해야겠다 
 const ResumeWrap = styled.main`
  * {
    font-family: 'Rubik', 'Nanum Gothic Coding';   
