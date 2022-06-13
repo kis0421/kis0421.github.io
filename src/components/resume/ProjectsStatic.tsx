@@ -222,7 +222,7 @@ const ProjectsStatic: Array<{
           </div>
 
           <div className="contribute">
-            <div>javascript {'->'} Jquery로 리팩토링</div>
+            <div>javascript {'->'} jquery로 리팩토링</div>
             <div>사용자에게 좋은 UX를 제공함과 동시에 가독성이 좋은 코드를 위해 일부 페이지에서  자바스크립트를 jquery로 리팩토링 했었습니다.</div>
           </div>
 
