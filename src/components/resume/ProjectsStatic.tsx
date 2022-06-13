@@ -237,7 +237,6 @@ const ProjectsStatic: Array<{
           <div>
             <h3>사용한 기술</h3>
             <div>HTML / CSS / javascript / jquery / PHP</div>
-            <div>React.js / Puppeteer.js /  Electron.js / Socket.io / Material-UI 외</div>
           </div><br />
 
           <div>
