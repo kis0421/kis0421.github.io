@@ -63,6 +63,12 @@ const SkillStacksWrap = styled.article`
 const ProjectsWrap = styled.article`
   min-height:250px;
   padding: 1rem 0;
+  .contribute {
+    margin-bottom:0.7rem;
+    > div:nth-child(1){
+      font-weight:bold;
+    }
+  }
   h3 {
     font-size:1.5rem;
     > a {
