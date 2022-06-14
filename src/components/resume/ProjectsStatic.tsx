@@ -172,7 +172,7 @@ const ProjectsStatic: Array<{
 
           <div>
             <h3>결과 및 성과</h3>
-            <div>레거시 코드 개선으로 인항 성능 향상</div>
+            <div>레거시 코드 개선에 따른 성능 향상</div>
             <div>월간 활성 사용자(MAU) 증대 (약 3,000명 달성)</div>
             <div>부분 유료화로 인한 매출 발생 (월 평균 VAT 포함 약 1,500,000원)</div>
           </div><br />
