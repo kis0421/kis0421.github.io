@@ -42,7 +42,7 @@ const ProjectsStatic: Array<{
           </div>
 
           <div className="contribute">
-            <div>image preload 구현</div>
+            <div>image prefetch 구현</div>
             최초에 렌더링 시 보일 이미지가 아닌 렌더링 이후 화면에 보일 이미지를 미리 불러오고
             사용자에게 이미지를 캐시에서 불러와 제공하여 UX를 개선했었습니다.
           </div>
@@ -231,7 +231,7 @@ const ProjectsStatic: Array<{
           </div>
 
           <div className="contribute">
-            <div>admin 내에 신규 페이지 개발 및 데이터 시각화</div>
+            <div>admin 내에 신규 페이지 개발</div>
           </div><br />
 
           <div>
