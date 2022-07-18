@@ -124,7 +124,8 @@ export default () => {
           <h1>
             <span>김민규 Minkyu Kim</span>
             <LinkGroups>
-              {linkGroups.map((linkInfo) => <a
+              {linkGroups.map((linkInfo, index) => <a
+                key={index}
                 href={linkInfo.link}
                 target="_blank">
                 {linkInfo.icon}
