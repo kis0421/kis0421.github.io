@@ -171,7 +171,7 @@ export default () => {
         <SectionWithMargin>
           <h2>경력</h2>
           <hr />
-          {CareerStatic.map((info, index) => <>
+          {CareerStatic.map((info, index) => <div key={index}>
             <CareerWrap>
               <h3>
                 <span>{info.company}</span>
@@ -182,7 +182,7 @@ export default () => {
               <article>{info.content}</article>
             </CareerWrap>
             {index + 1 < CareerStatic.length && <FaintLine />}
-          </>)}
+          </div>)}
         </SectionWithMargin>
 
       </ResumeWrap>
